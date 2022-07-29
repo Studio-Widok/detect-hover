@@ -1,13 +1,13 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-// const mode = 'production';
-const mode = 'development';
+const mode = 'production';
+// const mode = 'development';
 
 module.exports = {
   mode,
   devtool: mode === 'development' ? 'source-map' : false,
-  entry: ['./src/js/main.js', './src/scss/main.scss'],
+  entry: ['./src/js/detectHover.js'],
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
